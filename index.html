@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Our Valentine 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: black;
+      height: 100vh;
+      overflow: hidden;
+      color: white;
+    }
+
+    .story {
+      display: flex;
+      width: 600vw;
+      height: 100vh;
+      transition: transform 0.6s ease;
+    }
+
+    .page {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 25px;
+      gap: 20px;
+    }
+
+    .bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain; background: black;
+      filter: brightness(0.55);
+      z-index: -1;
+    }
+
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.8rem;
+      text-shadow: 0 0 25px rgba(255,255,255,0.9);
+    }
+
+    .glow-name {
+      font-size: 3.2rem;
+      color: #ff6aa6;
+      text-shadow: 0 0 20px #ff2e88, 0 0 40px #ff2e88;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%,100% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      max-width: 90%;
+    }
+
+    .hearts {
+      position: absolute;
+      font-size: 22px;
+      animation: float 6s linear forwards;
+      pointer-events: none;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0); opacity: 1; }
+      to { transform: translateY(-120vh); opacity: 0; }
+    }
+
+    .final { background: radial-gradient(circle, #ff4d88, #000); }
+
+    .choice {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      border: none;
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .yes { background: #ff4d88; color: white; }
+    .no { background: white; color: #ff4d88; position: relative; }
+
+    .tap {
+      position: absolute;
+      bottom: 25px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+<audio id="music" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3" loop></audio>
+
+<div class="story" id="story">
+
+  <div class="page" onclick="nextPage()">
+    <img class="bg" src="day7.jpg" />
+    <h1>Our Valentine</h1>
+    <p>Our Valentine is not just a date circled on a calendar or a celebration borrowed from the world outside us; it is a quiet universe that exists only between your heartbeat and mine. It lives in the soft pauses of our conversations, in the way silence feels warm instead of empty when we share it, and in the countless tiny moments that nobody else would ever notice but that mean everything to me. Loving you has turned ordinary days into something sacred, like every sunrise is secretly written for us and every night holds a promise whispered only to our souls. When I think of Valentine’s Day, I don’t imagine roses or chocolates first I imagine the comfort of knowing that somewhere in this chaotic world, there is one person who understands the language of my heart without needing translation. You are that understanding, that peace, that gentle certainty that love doesn’t have to be loud to be eternal. Our Valentine is the way your name feels like home inside my chest, the way time slows down when you smile at me, and the way even distance cannot thin the invisible thread tying us together. If every lifetime offered me a different love story, I would still choose this one this quiet, glowing, endlessly tender us again and again without hesitation.</p>
+    <div class="tap">tap to continue ✨</div>
+  </div>
+
+  <div class="page" onclick="nextPage()">
+    <img class="bg" src="day10.jpg" />
+    <h1>Your Smile</h1>
+    <p>Your smile is not something I merely see; it is something I feel spreading through me like the first warmth of sunlight after a long winter. It has a softness that calms storms I never speak about and a brightness that reaches corners of my soul I didn’t know were dark. Sometimes I wonder how something so simple can hold so much power how the curve of your lips can rewrite my entire mood, silence every doubt, and make the world look kinder than it did a moment before. When you smile, time behaves differently; seconds stretch into something golden and slow, as if the universe itself pauses just to admire you. I could spend forever trying to describe it and still fall short, because your smile isn’t only beautiful it is safe, it is warm, it is home. It carries laughter we haven’t shared yet and memories we are still walking toward, and every time I see it, I feel chosen in the most gentle way. If happiness had a face, it would look like you smiling without realizing how breathtaking you are. And maybe that is what I love most that your smile is effortless, honest, and real, just like the love quietly growing between us every single day.</p>
+  </div>
+
+  <div class="page" onclick="nextPage()">
+    <img class="bg" src="day12.jpg" />
+    <h1>In Your Arms</h1>
+    <p>Being in your arms feels like stepping out of the noise of the world and into a place where nothing can reach me except peace. It is not just closeness; it is a kind of quiet safety that wraps around my thoughts and tells them they can finally rest. In that space, worries lose their weight, time forgets to hurry, and everything that once felt uncertain suddenly becomes simple—because you are there. Your arms are not merely holding me; they are understanding me, protecting me, reminding me that I don’t have to be strong every moment when I am with you. There is a softness in the way you pull me closer, a silent promise that says, you belong here, and I feel it deeper than words could ever travel. If the world asked me where I feel most like myself, I wouldn’t name a place or a city or a memory I would simply say, with you. Because in your arms, I am not pretending, not hiding, not searching just existing in the purest form of comfort I have ever known. And if forever had a physical shape, I think it would feel exactly like that quiet heartbeat-to-heartbeat closeness we share when nothing else matters.</p>
+  </div>
+
+  <div class="page" onclick="nextPage()">
+    <img class="bg" src="day15.jpg" />
+    <h1>Our Story</h1>
+    <p>Our story, the tale of Catman and Batwoman, isn’t written with dramatic battles or grand heroic scenes—it is written with patience, laughter, understanding, and the quiet bravery of choosing each other every single day for eight beautiful months. Like two souls moving through the same night sky, we found one another not by accident but by a kind of destiny that felt gentle instead of overwhelming. We learned each other slowly the meanings behind silences, the hidden softness behind strong words, the small habits that make love feel real instead of imagined. And what makes our story special is not perfection, but the way we grow together, the way we listen, the way we protect the peace between us like something precious. Catman and Batwoman are not just characters; they are symbols of two hearts that decided to be safe places for one another in a world that often feels uncertain. Eight months may sound small to time, but to my heart it feels vast, filled with memories that already shine like something timeless. And the most beautiful part is knowing this story is still being written not rushing, not fading, just unfolding page by page into something deeper, stronger, and more permanent than either of us imagined when it first began.</p>
+  </div>
+
+  <div class="page" onclick="nextPage()">
+    <img class="bg" src="day18.jpg" />
+    <h1>Forever</h1>
+    <p>Forever is a word people say easily, but loving you has made me understand its real meaning—not endless time, but endless choosing. It is waking up each day and still finding new reasons to care, new reasons to stay, new reasons to believe that what we have is rare and worth protecting. Forever is not loud promises or perfect moments; it is quiet loyalty, gentle patience, and the certainty that even when days are ordinary, love can still be extraordinary. When I imagine the future, I don’t see grand pictures first I see small, peaceful scenes: conversations that last late into the night, laughter over nothing important, comfort during difficult days, and the simple happiness of knowing we are still side by side. If life stretches long, I want every year colored by your presence; if it moves quickly, I still want every moment touched by your love. Because forever, to me, is not about time at all it is about you. As long as my heart remembers how it feels to love yours, as long as your name continues to sound like home inside me, forever will already be here, quietly living between us, steady and unbreakable.</p>
+  </div>
+
+  <!-- Final Page -->
+  <div class="page final">
+    <img class="bg" src="day20.jpg" />
+
+    <h1 class="glow-name">Batwoman</h1>
+
+    <p>
+      Not just today… not just tomorrow…
+      <br><br>
+      I choose you in every lifetime,
+      every universe,
+      every version of forever.
+      <br><br>
+      And today… I have only one question in my heart.
+    </p>
+
+    <h1 style="font-size:2.4rem; margin-top:10px;">Will you marry me? 💍</h1>
+
+    <div class="choice">
+      <button class="btn yes" onclick="sayYes()">Yes… forever 💖</button>
+      <button class="btn no" onmouseover="moveNo(this)">No 🙈</button>
+    </div>
+
+    <div class="tap">tap your answer…</div>
+  </div>
+
+</div>
+
+</div>
+
+<script>
+let index = 0;
+const story = document.getElementById('story');
+const music = document.getElementById('music');
+let musicStarted = false;
+
+function nextPage() {
+  if (!musicStarted) {
+    music.play().catch(()=>{});
+    musicStarted = true;
+  }
+
+  if (index < 5) {
+    index++;
+    story.style.transform = `translateX(-${index * 100}vw)`;
+  }
+}
+
+function sayYes() {
+  releaseHearts();
+  alert('You just made me the happiest person alive 💖');
+}
+
+function moveNo(btn) {
+  const x = Math.random() * 200 - 100;
+  const y = Math.random() * 200 - 100;
+  btn.style.transform = `translate(${x}px, ${y}px)`;
+}
+
+function releaseHearts() {
+  for (let i = 0; i < 40; i++) {
+    const h = document.createElement('div');
+    h.className = 'hearts';
+    h.innerText = ['💖','💕','💗','✨'][Math.floor(Math.random()*4)];
+    h.style.left = Math.random()*100 + 'vw';
+    h.style.bottom = '0';
+    h.style.animationDuration = (4 + Math.random()*3) + 's';
+    document.body.appendChild(h);
+    setTimeout(() => h.remove(), 7000);
+  }
+}
+
+let startX = 0;
+window.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+window.addEventListener('touchend', e => {
+  let diff = startX - e.changedTouches[0].clientX;
+  if (diff > 50) nextPage();
+});
+</script>
+
+</body>
+</html>
